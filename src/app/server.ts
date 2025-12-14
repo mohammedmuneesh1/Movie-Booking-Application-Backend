@@ -1,5 +1,6 @@
 import express, { type Response } from 'express'
 import dotenv from 'dotenv'
+import connectDB from '../config/db.js';
 
 dotenv.config();
 
@@ -21,6 +22,11 @@ if(process.env.NODE_ENV !== 'production'){
     app.listen(PORT, () => {
         console.log(`Server is running on http://localhost:${PORT}`);
     });
+}
+else{
+ connectDB().catch((error) => {
+    console.error('Failed to connect to MongoDB:', error);
+  });
 }
 
 
