@@ -67,3 +67,26 @@ Vercel CLI 49.1.2
 🔍  Inspect: https://vercel.com/muneeshs-projects-0c5e57cb/vercel-typescript-backend-hosting/D5rADYM692kW4jiCDjBKTnfvLYkb [3s]
 ✅  Production: https://vercel-typescript-backend-hosting-axstvsoi8.vercel.app [15s]
 ❗️  Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+
+
+
+
+
+
+
+
+
+
+
+
+to remove caching or untrack file that already pushed to repo by forgetting to add on the .gitignore , then 
+
+
+git rm --cached .env
+
+PS D:\PERSONAL PROJECTS\MOVIE-TICKET-BACKEND> git rm --cached .env
+rm '.env'
+PS D:\PERSONAL PROJECTS\MOVIE-TICKET-BACKEND> git rm --cached .env.development
+>> git rm --cached .env.production
+rm '.env.development'
+rm '.env.production'
