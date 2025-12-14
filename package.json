@@ -1,0 +1,27 @@
+{
+  "name": "vercel-typescript-backend-hosting",
+  "version": "1.0.0",
+  "main": "src/app/server.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/app/server.ts",
+    "build": "tsc",
+    "start": "node dist/app/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.10.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  }
+}
