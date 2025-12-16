@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import connectDB from '../config/db.js';
 dotenv.config();
 const app = express();
-console.log('NODE_ENV', process.env.DB_URL);
+console.log('NODE_ENV', process.env.NODE_ENV);
 app.get('/', (req, res) => {
     return res.status(200).json({
         success: true,
